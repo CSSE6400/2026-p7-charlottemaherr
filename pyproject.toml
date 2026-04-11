@@ -1,0 +1,22 @@
+[project]
+name = "practical07"
+version = "0.1.0"
+description = "Adding queues to the ToDo app."
+license =  "CC-BY-NC-SA-4.0"
+authors = [
+    {name = "Richard Thomas",email = "richard.thomas@uq.edu.au"},
+	{name = "Brae Webb"},
+	{name = "Millie Hughes"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "flask (>=3.1.3,<4.0.0)",
+    "flask-sqlalchemy (>=3.1.1,<4.0.0)",
+    "psycopg2-binary (>=2.9.11,<3.0.0)",
+	"gunicorn (>=25.0.0,<26.0.0)",
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
