@@ -93,4 +93,15 @@ def delete_todo(todo_id):
     db.session.delete(todo) 
     db.session.commit() 
     return jsonify(todo.to_dict()), 200
- 
+
+@api.route('/todos/ical', methods=['GET'])
+def create_ical():
+    pass
+
+@api.route('/todos/ical/<task_id>/result', methods=['GET'])
+def get_task(task_id):
+    pass
+
+@api.route('/todos/ical/<task_id>/result', methods=['GET'])
+def get_calendar(task_id):
+    pass
